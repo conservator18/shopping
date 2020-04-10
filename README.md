@@ -1,2 +1,2 @@
 # shopping
-This is a shopping streat
+this is a shopping streat
