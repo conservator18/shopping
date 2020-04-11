@@ -14,7 +14,7 @@ module.exports = {
         .set('views', resolve('src/views'))
   },
   devServer: {
-    host: 'localhost',
+    host: '192.168.3.248',
     port: 8080,
     https: false,
     open: false,

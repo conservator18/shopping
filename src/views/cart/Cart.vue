@@ -6,7 +6,10 @@
 
 <script>
   export default {
-    name: "Cart"
+    name: "Cart",
+    created(){
+      console.log(this.$store.state.cart);
+    }
   }
 </script>
 

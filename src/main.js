@@ -5,6 +5,10 @@ import store from './store'
 import {request} from './network/request'
 import url from './network/url'
 
+import { Toast } from 'vant';
+import 'vant/lib/index.css';
+
+Vue.use(Toast);
 
 Vue.config.productionTip = false
 Vue.prototype.request = request

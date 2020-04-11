@@ -2,7 +2,7 @@
   <div>
     <swiper class="product-info-swiper" ref="mySwiper" :options="swiperOptions">
       <swiper-slide v-for="(item, index) in productInfoData" :key="index">
-        <img :src="item" />
+        <img :src="item" @load="swiperLoad" />
       </swiper-slide>
       <div class="swiper-pagination" slot="pagination"></div>
     </swiper>
@@ -38,6 +38,11 @@ export default {
         }
       }
     };
+  },
+  methods: {
+    swiperLoad(){
+      this.$emit('swiperLoad')
+    }
   }
 };
 </script>

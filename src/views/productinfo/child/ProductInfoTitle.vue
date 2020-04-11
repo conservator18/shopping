@@ -4,7 +4,7 @@
     <div class="productPrice">
       <span class="newPrice">{{productTitleData.price}}</span>
       <span class="oldPrice">{{productTitleData.oldPrice}}</span>
-      <span class="discount">{{productTitleData.discountDesc}}</span>
+      <span class="discount" v-show="productTitleData.discountDesc">{{productTitleData.discountDesc}}</span>
     </div>
     <div class="columns">
         <div class="columns-item" v-for="(item, index) in columns" :key="index">{{item}}</div>
